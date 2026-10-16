@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="httpRequest.PostRequestsMethods">
+      <class name="httpRequest.CookieAndHeader">
         <methods>
-          <include name="postRequestByJsonFile"/>
+          <include name="getAllInfo"/>
         </methods>
-      </class> <!-- httpRequest.PostRequestsMethods -->
+      </class> <!-- httpRequest.CookieAndHeader -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

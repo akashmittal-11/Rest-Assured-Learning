@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-15T16:22:17 IST" name="Default suite" finished-at="2026-10-15T16:22:21 IST" duration-ms="3947">
+  <suite started-at="2026-10-16T16:10:54 IST" name="Default suite" finished-at="2026-10-16T16:10:58 IST" duration-ms="3726">
     <groups>
     </groups>
-    <test started-at="2026-10-15T16:22:17 IST" name="Default test" finished-at="2026-10-15T16:22:21 IST" duration-ms="3947">
-      <class name="httpRequest.PostRequestsMethods">
-        <test-method signature="postRequestByJsonFile()[pri:0, instance:httpRequest.PostRequestsMethods@692f203f]" started-at="2026-10-15T16:22:17 IST" name="postRequestByJsonFile" finished-at="2026-10-15T16:22:21 IST" duration-ms="3895" status="PASS">
+    <test started-at="2026-10-16T16:10:54 IST" name="Default test" finished-at="2026-10-16T16:10:58 IST" duration-ms="3726">
+      <class name="httpRequest.CookieAndHeader">
+        <test-method signature="loggingMethods()[pri:0, instance:httpRequest.CookieAndHeader@4c583ecf]" started-at="2026-10-16T16:10:54 IST" name="loggingMethods" finished-at="2026-10-16T16:10:58 IST" duration-ms="3678" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postRequestByJsonFile -->
-      </class> <!-- httpRequest.PostRequestsMethods -->
+        </test-method> <!-- loggingMethods -->
+      </class> <!-- httpRequest.CookieAndHeader -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
