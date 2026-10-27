@@ -110,10 +110,10 @@ void getSingleHeaderInfo() {
 				.get("https://www.google.com/")
 			
 			.then()
-			.log().all();//it will log all data on the console
-//			.log().body();// it will log only body response
-//			.log().headers();//it will log only headers in the console
-//			.log().cookies();//it will log only cookies from the response
+			.log().all();		//it will log all data on the console
+//			.log().body();		// it will log only body response
+//			.log().headers();	//it will log only headers in the console
+//			.log().cookies();	//it will log only cookies from the response
 			
 			
 		}

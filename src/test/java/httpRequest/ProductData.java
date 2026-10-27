@@ -18,6 +18,4 @@ public class ProductData {
         return price;
     }
 	
-
-
 }

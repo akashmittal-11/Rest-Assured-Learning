@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="httpRequest.CookieAndHeader">
+      <class name="httpRequest.JSONValidations">
         <methods>
-          <include name="getAllInfo"/>
+          <include name="validationByJsonObject"/>
         </methods>
-      </class> <!-- httpRequest.CookieAndHeader -->
+      </class> <!-- httpRequest.JSONValidations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

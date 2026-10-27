@@ -162,9 +162,6 @@ public class PostRequestsMethods {
 		.body("name", equalTo("iPhone 12"))
 		.log().all();
 		
-	}
-	
-	
-	
+	}	
 
 }
