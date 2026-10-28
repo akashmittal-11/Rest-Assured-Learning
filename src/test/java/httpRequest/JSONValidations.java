@@ -7,14 +7,9 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.json.JSONArray;
-import org.json.JSONObject;
 
 public class JSONValidations {
 	
@@ -83,7 +78,7 @@ public class JSONValidations {
 				.when()
 					.get("https://api.restful-api.dev/objects");
 		
-				String response = res.getBody().asString();
+				String response = res.asString();
 
 				System.out.println("Response Body: " + response);
 

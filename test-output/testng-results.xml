@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-27T16:19:17 IST" name="Default suite" finished-at="2026-10-27T16:19:21 IST" duration-ms="4449">
+  <suite started-at="2026-10-28T18:31:20 IST" name="Default suite" finished-at="2026-10-28T18:31:23 IST" duration-ms="3410">
     <groups>
     </groups>
-    <test started-at="2026-10-27T16:19:17 IST" name="Default test" finished-at="2026-10-27T16:19:21 IST" duration-ms="4449">
-      <class name="httpRequest.JSONValidations">
-        <test-method signature="validateByAsserstions()[pri:0, instance:httpRequest.JSONValidations@4c583ecf]" started-at="2026-10-27T16:19:17 IST" name="validateByAsserstions" finished-at="2026-10-27T16:19:19 IST" duration-ms="2551" status="PASS">
+    <test started-at="2026-10-28T18:31:20 IST" name="Default test" finished-at="2026-10-28T18:31:23 IST" duration-ms="3410">
+      <class name="httpRequest.FileUploadAndDownload">
+        <test-method signature="uploadMultipleFile()[pri:0, instance:httpRequest.FileUploadAndDownload@4c583ecf]" started-at="2026-10-28T18:31:20 IST" name="uploadMultipleFile" finished-at="2026-10-28T18:31:23 IST" duration-ms="2682" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateByAsserstions -->
-        <test-method signature="validateByThen()[pri:0, instance:httpRequest.JSONValidations@4c583ecf]" started-at="2026-10-27T16:19:19 IST" name="validateByThen" finished-at="2026-10-27T16:19:20 IST" duration-ms="485" status="PASS">
+        </test-method> <!-- uploadMultipleFile -->
+        <test-method signature="uploadSingleFile()[pri:0, instance:httpRequest.FileUploadAndDownload@4c583ecf]" started-at="2026-10-28T18:31:23 IST" name="uploadSingleFile" finished-at="2026-10-28T18:31:23 IST" duration-ms="674" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateByThen -->
-        <test-method signature="validationByJsonPath()[pri:0, instance:httpRequest.JSONValidations@4c583ecf]" started-at="2026-10-27T16:19:20 IST" name="validationByJsonPath" finished-at="2026-10-27T16:19:20 IST" duration-ms="526" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validationByJsonPath -->
-        <test-method signature="validationByJsonArray()[pri:1, instance:httpRequest.JSONValidations@4c583ecf]" started-at="2026-10-27T16:19:20 IST" name="validationByJsonArray" finished-at="2026-10-27T16:19:21 IST" duration-ms="840" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validationByJsonArray -->
-      </class> <!-- httpRequest.JSONValidations -->
+        </test-method> <!-- uploadSingleFile -->
+      </class> <!-- httpRequest.FileUploadAndDownload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
