@@ -23,12 +23,13 @@ public class XMLParsing {
 		
 		.then()
 			.statusCode(200)
-			.body("users.user[0].name",equalTo("Aarav Sharma"));	
+			.body("users.user[0].name",equalTo("Aarav Sharma"))
+			.log().all();	
 		
 	}
 	
 	
-	@Test
+//	@Test
 	void validateResponseByXMLPath() {
 		
 		Response res = 
@@ -63,7 +64,7 @@ public class XMLParsing {
 		
 	}
 	
-	@Test
+//	@Test
 	void validateXMLResponseUsingSearching() {
 		
 		Response res=

@@ -1,0 +1,20 @@
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="users">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="user">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:integer" name="id"/>
+                            <xs:element type="xs:string" name="name"/>
+                            <xs:element type="xs:string" name="email"/>
+                            <xs:element type="xs:string" name="gender"/>
+                            <xs:element type="xs:string" name="status"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

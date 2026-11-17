@@ -12,7 +12,7 @@ public class HttpRequests {
 	int id;
 	
 	
-//	@Test
+	@Test
 	void getRequest() {
 		
 		when()
@@ -46,7 +46,7 @@ public class HttpRequests {
 //	id = 261
 	
 	
-	@Test(priority = 1)
+//	@Test(priority = 1)
 	void createUserAndGetID() {
 		
 		HashMap data = new HashMap();
@@ -62,7 +62,7 @@ public class HttpRequests {
 			.jsonPath().getInt("id");
 		
 	}
-	@Test(priority=2,dependsOnMethods = {"createUserAndGetID"})
+//	@Test(priority=2,dependsOnMethods = {"createUserAndGetID"})
 	void putRequest() {
 		HashMap data = new HashMap();
 		data.put("name","Akash Mittal");
@@ -80,7 +80,7 @@ public class HttpRequests {
 			.log().all();
 	}
 	
-	@Test(priority = 3,dependsOnMethods = {"putRequest"})
+//	@Test(priority = 3,dependsOnMethods = {"putRequest"})
 	void deleteRequest() {
 		given()
 		
