@@ -78,7 +78,7 @@ public class HttpRequests2 {
 			.log().all();
 	}
 	
-	@Test(priority = 3,dependsOnMethods = {"createObjectAndGetID"})
+	@Test(priority = 3,dependsOnMethods = {"updateObject"})
 	void deleteObject() {
 		
 		when()

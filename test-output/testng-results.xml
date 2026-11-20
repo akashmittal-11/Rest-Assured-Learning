@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-17T17:41:41 IST" name="Default suite" finished-at="2026-11-17T17:41:45 IST" duration-ms="3328">
+  <suite started-at="2026-11-20T18:00:19 IST" name="Default suite" finished-at="2026-11-20T18:00:22 IST" duration-ms="2816">
     <groups>
     </groups>
-    <test started-at="2026-11-17T17:41:41 IST" name="Default test" finished-at="2026-11-17T17:41:45 IST" duration-ms="3328">
-      <class name="httpRequest.SchemaValidations">
-        <test-method signature="xmlSchemaValidation()[pri:0, instance:httpRequest.SchemaValidations@47eaca72]" started-at="2026-11-17T17:41:41 IST" name="xmlSchemaValidation" finished-at="2026-11-17T17:41:45 IST" duration-ms="3282" status="PASS">
+    <test started-at="2026-11-20T18:00:19 IST" name="Default test" finished-at="2026-11-20T18:00:22 IST" duration-ms="2816">
+      <class name="apiChaining.GetUser">
+        <test-method signature="test_getUser()[pri:0, instance:apiChaining.GetUser@4218d6a3]" started-at="2026-11-20T18:00:19 IST" name="test_getUser" finished-at="2026-11-20T18:00:22 IST" duration-ms="2747" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- xmlSchemaValidation -->
-      </class> <!-- httpRequest.SchemaValidations -->
+        </test-method> <!-- test_getUser -->
+      </class> <!-- apiChaining.GetUser -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

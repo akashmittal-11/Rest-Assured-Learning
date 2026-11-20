@@ -73,7 +73,7 @@ public class PostRequestsMethods {
 		
 	}
 	
-//	@Test
+	@Test
 	void postRequestByJSONLibrary() {
 		
 		JSONObject requestBody = new JSONObject();
