@@ -1,6 +1,7 @@
 package apiChaining;
 
 
+import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
@@ -15,7 +16,7 @@ import org.json.JSONObject;
 public class CreateUser {
 	
 	@Test
-	void test_createUser() {
+	void test_createUser(ITestContext context) {
 		
 		Faker fake = new Faker();
 		JSONObject productData = new JSONObject();
@@ -27,16 +28,22 @@ public class CreateUser {
 		responseBody.put("name", fake.name().firstName()+ "'s iPhone");
 		responseBody.put("data", productData);
 
-		given()
+		Response res = 
+				given()
 		
 			.contentType("application/json")
 			.body(responseBody.toString())
+			
 		.when()
 		
-			.post("https://api.restful-api.dev/objects")
-		.then()
+			.post("https://api.restful-api.dev/objects");
+
+		String id = res.jsonPath().get("id").toString();
+		System.out.println("Id is: " +id);
 		
-			.statusCode(200)
-			.log().body();
+//		context.setAttribute("object_id", id);
+		context.getSuite().setAttribute("object_id", id);
+		/*In TestNG XML file to get this method on the suite level we are using getSuite method.*/
+
 		
 	}}

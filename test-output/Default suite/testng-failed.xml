@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apiChaining.CreateUser">
+      <class name="apiChaining.GetUser">
         <methods>
-          <include name="test_createUser"/>
+          <include name="test_getUser" invocation-numbers="0"/>
         </methods>
-      </class> <!-- apiChaining.CreateUser -->
+      </class> <!-- apiChaining.GetUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

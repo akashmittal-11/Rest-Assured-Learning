@@ -1,25 +1,25 @@
 package apiChaining;
 
+import static io.restassured.RestAssured.given;
+
+import org.testng.ITestContext;
 import org.testng.annotations.Test;
-
-import com.github.javafaker.Faker;
-
-import io.restassured.response.Response;
-
-import static io.restassured.RestAssured.*;
 
 public class GetUser {
 	
 	
 	@Test
-	void test_getUser() {
+	void test_getUser(ITestContext context) {
 		
+//		String id = (String) context.getAttribute("object_id");
+		String id = (String) context.getSuite().getAttribute("object_id");
+
+		System.out.println("id is: "+id);
 		given()
-			.pathParam("id","ff808181a09d98f701a1f8eec51907c5" )
+			.pathParam("id",id )
 		.when()
 			.get("https://api.restful-api.dev/objects/{id}")
 			
-		
 		.then()
 			.statusCode(200)
 			.log().body();
